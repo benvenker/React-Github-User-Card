@@ -1,0 +1,36 @@
+* {
+  border: 1px solid red;
+  color: rgb(46, 46, 46);
+}
+
+.user-card {
+  margin: 10px auto;
+  width: 50%;
+  border-radius: 5px;
+}
+
+.user-card .user-name,
+.user-card .company,
+.user-card .location {
+  padding: 10px;
+  margin: 0;
+}
+
+.user-card .user-name {
+  font-size: 1.5em;
+}
+
+.user-card .company,
+.user-card .location {
+  font-size: 1em;
+}
+
+.user-card .location {
+  font-size: 1em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+}
