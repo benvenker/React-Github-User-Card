@@ -7,7 +7,8 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      user: {}
+      user: {},
+      followers: []
     };
   }
 
@@ -16,13 +17,18 @@ class App extends React.Component {
       .get(`https://api.github.com/users/benvenker`)
       .then(response => response.data)
       .then(data => this.setState({ user: data }));
+
+    axios
+      .get(`https://api.github.com/users/benvenker/followers`)
+      .then(response => response.data)
+      .then(data => this.setState({ followers: data }));
   }
 
   render() {
-    const user = this.state.user;
+    const { user, followers } = this.state;
     return (
       <div className="app">
-        <UserCard user={user} />
+        <UserCard user={user} followers={followers} />
       </div>
     );
   }
