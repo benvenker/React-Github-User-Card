@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import axios from "axios";
 import UserCard from "./components/UserCard";
+import MaterialCard from "./components/MaterialCard";
 
 class App extends React.Component {
   constructor() {
@@ -28,7 +29,8 @@ class App extends React.Component {
     const { user, followers } = this.state;
     return (
       <div className="app">
-        <UserCard user={user} followers={followers} />
+        {/* <UserCard user={user} followers={followers} /> */}
+        <MaterialCard user={user} followers={followers} />
       </div>
     );
   }
