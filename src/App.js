@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import axios from "axios";
-import UserCard from "./components/UserCard";
+// import UserCard from "./components/UserCard";
 import MaterialCard from "./components/MaterialCard";
 
 class App extends React.Component {
