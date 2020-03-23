@@ -2,11 +2,11 @@ import React from "react";
 import "./Followers.css";
 
 const Followers = props => {
-  const { followers } = props;
+  console.log("followers props: ", props);
   return (
     <div>
       <ul>
-        {followers.map(follower => {
+        {props.followers.map(follower => {
           return (
             <li>
               <a href={follower.html_url}>{follower.login}</a>

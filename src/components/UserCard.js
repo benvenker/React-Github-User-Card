@@ -16,7 +16,7 @@ const UserCard = props => {
       <div className="counts">
         <span>
           <span className="count repos-count">{user.public_repos} </span>
-          <a classname="url repos-url" href={user.repos_url}>
+          <a className="url repos-url" href={user.repos_url}>
             Repos,
           </a>
         </span>
